@@ -1,7 +1,7 @@
 .containerHomePage {
     display: flex;
     gap: 3%;
-    margin-top: 3rem;
+    margin-top: 7rem;
 }
 
 .textHomePage {
@@ -27,8 +27,31 @@
     background-color: white;
     border: 1px solid black;
     height: 2rem;
+    cursor: pointer;
 }
 
 .divImgHomePage img {
     width: 40rem;
+}
+
+.containerDesafio {
+    display: flex;
+    justify-content: center;
+    margin-top: 14rem;
+}
+
+.containerDesafio h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.containerDesafio p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.containerDesafio div {
+    width: 50rem;
+    text-align: center;
 }
