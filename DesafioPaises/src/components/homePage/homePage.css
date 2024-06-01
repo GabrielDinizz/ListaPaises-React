@@ -23,21 +23,23 @@
 }
 
 .textHomePage button{
-    width: 10rem;
+    width: 11rem;
     background-color: white;
     border: 1px solid black;
-    height: 2rem;
+    height: 3rem;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .divImgHomePage img {
-    width: 40rem;
+    width: 50rem;
 }
 
 .containerDesafio {
     display: flex;
     justify-content: center;
-    margin-top: 20rem;
+    margin-top: 12rem;
 }
 
 .containerDesafio h2 {

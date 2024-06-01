@@ -1,5 +1,5 @@
 import '../homePage/homePage.css'
-import img from '../../assets/imgHomePage.png'
+import img from '../../assets/imgHomePage.svg'
 
 function homePage() {
     return (
