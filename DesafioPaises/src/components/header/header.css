@@ -3,4 +3,10 @@ header {
     justify-content: center;
     padding: 1rem;
     font-weight: 500;
+    
+    width: 100%;
+}
+
+header div{
+    position: fixed;
 }
