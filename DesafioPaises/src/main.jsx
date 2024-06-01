@@ -7,9 +7,6 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header/>
-    <main>
-      <HomePage/>
-
-    </main>
+    <HomePage/>
   </React.StrictMode>,
 )

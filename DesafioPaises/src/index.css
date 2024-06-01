@@ -10,3 +10,8 @@
 body {
     background-color: white;
 }
+
+section {
+    max-width: 1440px;
+    margin: auto;
+}
