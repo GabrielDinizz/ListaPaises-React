@@ -3,7 +3,9 @@
     gap: 3%;
     margin-top: 7rem;
 }
-
+.h2{
+    background-color: aquamarine;
+}
 .textHomePage {
     display: flex;
     flex-direction: column;

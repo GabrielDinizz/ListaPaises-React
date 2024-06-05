@@ -1,10 +1,13 @@
 header {
     display: flex;
     justify-content: center;
-    padding: 1rem;
     font-weight: 500;
 }
 
 header div{
     position: fixed;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
 }

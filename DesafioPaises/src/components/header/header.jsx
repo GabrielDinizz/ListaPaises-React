@@ -5,7 +5,7 @@ function Header() {
         <>
             <header>
                 <div>
-                    <p>gabrieldiniz.dev</p>
+                    <p>instagram: @gabrieldiniz.dev</p>
                 </div>
             </header>
         </>

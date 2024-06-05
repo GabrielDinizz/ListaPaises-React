@@ -1,7 +1,9 @@
 import '../list/list.css'
 import noFavorite from '../../assets/noFavorite.svg'
+import '../list/list.js'
 
 function lista() {
+
     return (
         <>
             <section className='containerList'>
@@ -10,7 +12,7 @@ function lista() {
                         <h2>Países</h2>
                         <p>População total:</p>
                     </div>
-                    <div className='listCards'>
+                    <div id='listCards'>
                         <div className='card'>
                             <div className='cardTxt'>
                                 <h2>Nome</h2>
@@ -22,39 +24,7 @@ function lista() {
                                     <img src="https://flagcdn.com/ao.svg" alt="" />
                                 </div>
                                 <div className='divFavorite'>
-                                    <img src={noFavorite} alt="" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='card'>
-                            <div className='cardTxt'>
-                                <h2>Nome</h2>
-                                <h3>Capital</h3>
-                                <h3>População</h3>
-                            </div>
-                            <div className='cardImgs'>
-                                <div className='divFlag'>
-                                    <img src="https://flagcdn.com/ao.svg" alt="" />
-                                </div>
-                                <div className='divFavorite'>
-                                    <img src={noFavorite} alt="" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='card'>
-                            <div className='cardTxt'>
-                                <h2>Nome</h2>
-                                <h3>Capital</h3>
-                                <h3>População</h3>
-                            </div>
-                            <div className='cardImgs'>
-                                <div className='divFlag'>
-                                    <img src="https://flagcdn.com/ao.svg" alt="" />
-                                </div>
-                                <div className='divFavorite'>
-                                    <img src={noFavorite} alt="" />
+                                    <img src={noFavorite} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -64,9 +34,9 @@ function lista() {
                 <div className='divList'>
                     <div className='txtList'>
                         <h2>Favoritos</h2>
-                        <p>População total</p>
+                        <p>População total: </p>
                     </div>
-                    <div>
+                    <div  className='listCardFavorite'>
 
                     </div>
                 </div>

@@ -25,7 +25,7 @@
     font-weight: 200;
 }
 
-.listCards {
+#listCards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -41,17 +41,17 @@
 }
 
 .cardTxt h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .cardTxt h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
 .cardTxt h3:nth-child(2) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .cardImgs {
@@ -79,5 +79,12 @@
 }
 
 .divFavorite img{
-    width: 70%;
+    width: 60%;
+}
+
+.listCardFavorite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
 }
