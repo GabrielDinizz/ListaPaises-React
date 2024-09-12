@@ -13,21 +13,6 @@ function lista() {
                         <p>População total:</p>
                     </div>
                     <div id='listCards'>
-                        <div className='card'>
-                            <div className='cardTxt'>
-                                <h2>Nome</h2>
-                                <h3>Capital</h3>
-                                <h3>População</h3>
-                            </div>
-                            <div className='cardImgs'>
-                                <div className='divFlag'>
-                                    <img src="https://flagcdn.com/ao.svg" alt="" />
-                                </div>
-                                <div className='divFavorite'>
-                                    <img src={noFavorite} alt=""/>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

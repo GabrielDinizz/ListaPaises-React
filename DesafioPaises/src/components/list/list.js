@@ -9,14 +9,14 @@ fetch('/paises.json').then(res=>{
     console.log(erro+" erro na requisição")
 });
     
-function mostraDados(dados){
-        var id = 0;
-        const listCard =document.querySelector('#listCards');
+function mostraDados(dados) {
+    var id = 0;
+    const listCard = document.querySelector('#listCards');
 
-        dados.slice(0,5).forEach(acesso => {
-        id++
-        listCard.innerHTML+= `
-        <div class='card' id='card_${id}'>
+    dados.slice(0, 50).forEach((acesso, index) => {
+        id++;
+        listCard.innerHTML += `
+        <div class='card' id='card_${id}' data-index='${index}'>
             <div class='cardTxt'>
                 <h2>${acesso.name}</h2>
                 <h3>${acesso.capital}</h3>
@@ -31,20 +31,33 @@ function mostraDados(dados){
                 </div>
             </div>
         </div>
-        `
-        });
-
+        `;
+    });
 }
 
-//tornando essa função disponível para outros módulos(funções).
-window.favoritoId = function(id) {
-    //No DOM, os IDs não podem começar com um número
+
+window.favoritoId = function (id) {
     const cardFavoritado = document.querySelector(`#card_${id}`);
-    const imgFavorito = cardFavoritado.querySelector('.coracaoFavorito')
-    imgFavorito.src = Favorite
+    const imgFavorito = cardFavoritado.querySelector('.coracaoFavorito');
+    const listFavoritos = document.querySelector('.listCardFavorite');
+    const listCard = document.querySelector('#listCards');
 
-
-    const listFavoritos =document.querySelector('.listCardFavorite');
-    //porque appendChield funciona e '.innerhtml' nao.
-    listFavoritos.appendChild(cardFavoritado);
+    if (imgFavorito.src.includes(noFavorite)) {
+        // Adiciona o país à lista de favoritos
+        imgFavorito.src = Favorite;
+        listFavoritos.appendChild(cardFavoritado);
+    } else {
+        // Remove o país da lista de favoritos e retorna para a posição original
+        imgFavorito.src = noFavorite;
+        const indexOriginal = cardFavoritado.getAttribute('data-index');
+        
+        // Encontra a posição correta na lista principal
+        const cards = listCard.children;
+        if (cards.length === 0 || indexOriginal >= cards.length) {
+            listCard.appendChild(cardFavoritado);
+        } else {
+            listCard.insertBefore(cardFavoritado, cards[indexOriginal]);
+        }
+    }
 };
+
